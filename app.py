@@ -12,6 +12,7 @@ from langchain.chains import create_history_aware_retriever, create_retrieval_ch
 from langchain.memory import ChatMessageHistory
 from langchain_core.runnables.history import RunnableWithMessageHistory
 from langchain_community.vectorstores import FAISS  
+from sentence_transformers import SentenceTransformer
 #from transformers import AutoConfig
 
 
