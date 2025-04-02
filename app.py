@@ -16,7 +16,7 @@ from langchain_community.vectorstores import FAISS
 load_dotenv()
 
 # Configuration
-EMBEDDING_MODEL = "all-MiniLM-L6-v2"
+EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
 CHUNK_SIZE = 2000
 CHUNK_OVERLAP = 400
 
