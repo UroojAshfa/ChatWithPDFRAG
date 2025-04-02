@@ -12,10 +12,14 @@ from langchain.chains import create_history_aware_retriever, create_retrieval_ch
 from langchain.memory import ChatMessageHistory
 from langchain_core.runnables.history import RunnableWithMessageHistory
 from langchain_community.vectorstores import FAISS  
+from transformers import AutoConfig
+
+
 
 load_dotenv()
 
 # Configuration
+config = AutoConfig.from_pretrained("sentence-transformers/all-MiniLM-L6-v2", token="YOUR_HUGGINGFACE_TOKEN")
 EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
 CHUNK_SIZE = 2000
 CHUNK_OVERLAP = 400
