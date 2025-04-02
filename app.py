@@ -18,10 +18,12 @@ from sentence_transformers import SentenceTransformer
 
 
 load_dotenv()
+model = SentenceTransformer("sentence-transformers/all-MiniLM-L6-v2")
+model.save("./local_model")
 
 # Configuration
-#config = AutoConfig.from_pretrained("sentence-transformers/all-MiniLM-L6-v2", token="YOUR_HUGGINGFACE_TOKEN")
-EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
+
+EMBEDDING_MODEL = "./local_model"
 CHUNK_SIZE = 2000
 CHUNK_OVERLAP = 400
 
