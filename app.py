@@ -13,24 +13,26 @@ from langchain.memory import ChatMessageHistory
 from langchain_core.runnables.history import RunnableWithMessageHistory
 from langchain_community.vectorstores import FAISS  
 from sentence_transformers import SentenceTransformer
-#from transformers import AutoConfig
 
+
+os.environ["HF_HOME"] = "/app/.cache/huggingface"
 
 
 load_dotenv()
 model = SentenceTransformer("sentence-transformers/all-MiniLM-L6-v2")
-model.save("./local_model")
+
 
 # Configuration
 
-EMBEDDING_MODEL = "./local_model"
+EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
 CHUNK_SIZE = 2000
 CHUNK_OVERLAP = 400
 
 # Initialize embeddings
 embeddings = HuggingFaceEmbeddings(
     model_name=EMBEDDING_MODEL,
-    model_kwargs={'device': 'cpu'},
+    #model_kwargs={'device': 'cpu'},
+    model_kwargs={'cache_dir': "/app/.cache/huggingface"}
     encode_kwargs={'normalize_embeddings': True}
 )
 
