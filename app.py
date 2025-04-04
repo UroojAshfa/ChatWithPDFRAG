@@ -15,11 +15,17 @@ from langchain_community.vectorstores import FAISS
 from sentence_transformers import SentenceTransformer
 
 
-os.environ["HF_HOME"] = "/app/.cache/huggingface"
+#os.environ["HF_HOME"] = "/app/.cache/huggingface"
 
 
-load_dotenv()
-model = SentenceTransformer("sentence-transformers/all-MiniLM-L6-v2")
+load_dotenv
+os.environ['GROQ_API_KEY']=os.getenv("GROQ_API_KEY")
+groq_api_key=os.getenv("GROQ_API_KEY")
+
+## If you do not have open AI key use the below Huggingface embedding
+#os.environ['HF_TOKEN']=os.getenv("HF_TOKEN")
+#embeddings=HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
+#model = SentenceTransformer("sentence-transformers/all-MiniLM-L6-v2")
 
 
 # Configuration
