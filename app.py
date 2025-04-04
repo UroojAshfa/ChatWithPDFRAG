@@ -32,7 +32,7 @@ CHUNK_OVERLAP = 400
 embeddings = HuggingFaceEmbeddings(
     model_name=EMBEDDING_MODEL,
     #model_kwargs={'device': 'cpu'},
-    model_kwargs={'cache_dir': "/app/.cache/huggingface"}
+    model_kwargs={'cache_dir': "/app/.cache/huggingface"},
     encode_kwargs={'normalize_embeddings': True}
 )
 
