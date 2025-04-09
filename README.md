@@ -99,11 +99,7 @@ pip install -r requirements.txt
 
 ## ☁️ Deploy to Streamlit Cloud
 
-1. Push your repo to GitHub.
-2. Go to [Streamlit Cloud](https://streamlit.io/cloud) and connect your repo.
-3. Add your environment variables via `Secrets` tab.
-4. Click **Deploy**. Done!
-
+Link to the deployed version of my app: https://chatwithpdfrag.streamlit.app/
 ---
 
 ## 📌 Tips
