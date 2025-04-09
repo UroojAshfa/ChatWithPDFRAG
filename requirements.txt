@@ -9,7 +9,7 @@ bs4
 arxiv
 pymupdf
 wikipedia
-langchain_text_splitters
+langchain-text-splitters
 chromadb
 sentence-transformers==2.2.2
 langchain_huggingface
