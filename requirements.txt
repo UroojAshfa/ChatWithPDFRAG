@@ -11,7 +11,7 @@ pymupdf
 wikipedia
 langchain-text-splitters
 chromadb
-sentence-transformers==2.2.2
+sentence-transformers
 langchain_huggingface
 faiss-cpu
 langchain_chroma
