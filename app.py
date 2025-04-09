@@ -21,13 +21,13 @@ from sentence_transformers import SentenceTransformer
 load_dotenv()
 groq_key = os.getenv("GROQ_API_KEY") or st.secrets.get("GROQ_API_KEY", "")
 if groq_key:
-    os.environ['GROQ_API_KEY'] = groq_key
+    os.environ['GROQ_API_KEY'] = str(groq_key)
 else:
     raise ValueError("GROQ_API_KEY is missing. Make sure it's set in your .env or Streamlit secrets.")
 
 hf_token = os.getenv("HF_TOKEN") or st.secrets.get("HF_TOKEN", "")
 if hf_token:
-    os.environ['HF_TOKEN'] = hf_token
+    os.environ['HF_TOKEN'] = str(hf_token)
 else:
     raise ValueError("HF_TOKEN is missing. Make sure it's set in your .env or Streamlit secrets.")
 
