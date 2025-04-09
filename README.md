@@ -2,7 +2,6 @@
 
 A blazing-fast Streamlit app that lets you upload PDF documents and chat with their content using **Groq's ultra-fast LLMs**, **LangChain**, and **FAISS** for retrieval-augmented generation (RAG).
 
-![screenshot](https://your-screenshot-url.com) <!-- optional: add your own screenshot -->
 
 ## 🚀 Features
 
@@ -19,7 +18,7 @@ A blazing-fast Streamlit app that lets you upload PDF documents and chat with th
 ## 📦 Installation
 
 ```bash
-git clone https://github.com/yourusername/turbo-pdf-chat.git
+git clone https://github.com/UroojAshfa/turbo-pdf-chat.git
 cd turbo-pdf-chat
 pip install -r requirements.txt
 ```
@@ -115,11 +114,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🧑‍💻 Author
 
-Built by [Your Name](https://github.com/yourusername) with ❤️ and Groq.
-
----
 
 ## 📜 License
 
